@@ -8,7 +8,7 @@ class MyApp < Sinatra::Base
     return erb :index
   end
 
-  post '/fortune' do
+  post '/' do
     @the_fortune=get_fortune
     @the_user=params[:user]
     return erb :results
